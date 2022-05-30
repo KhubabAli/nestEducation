@@ -157,6 +157,7 @@ if(token){
                            </div>
                          {!user.value ?
                           <div className="header__btn  d-none d-sm-block">
+                          <Link href="/sign-in"><a className="btn btn-outline-primary btn-lg" style={button}>Sign-in</a></Link>
                            </div>
                             :
                            <div className="header__btn  d-none d-sm-block">
