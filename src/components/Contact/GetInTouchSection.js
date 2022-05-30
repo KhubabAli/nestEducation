@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 import Link from 'next/link';
 
 class GetInTouch extends Component {
@@ -73,7 +76,7 @@ class GetInTouch extends Component {
                                        </svg>
                                     </div>
                                     <div className="contact__info-text">
-                                       <h4>Educal</h4>
+                                       <h4>FIRST AID MADE EASY</h4>
                                        <p><a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">Location: Mall Road , Lahore , Punjab , Pakistan.</a></p>
    
                                     </div>
@@ -112,9 +115,9 @@ class GetInTouch extends Component {
                            <div className="contact__social pl-30">
                               <h4>Follow Us</h4>
                               <ul>
-                                <li><a href="#" className="fb"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
-                                <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
+                                <li><a href="#" className="fb"><i><FacebookIcon fontSize='large'/></i></a></li>
+                                <li><a href="#" className="tw"><i><TwitterIcon fontSize="large"/></i></a></li>
+                                <li><a href="#" className="pin"><i><PinterestIcon fontSize='large'/></i></a></li>
                               </ul>
                            </div>
                         </div>

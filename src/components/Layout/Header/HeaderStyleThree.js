@@ -8,8 +8,8 @@ import ShopingCart from './ShopingCart';
 
 
 
-const image={width:"80px",hieght:"300px"}
-const button={margin:"0px 10px"}
+const image={width:"80px",hieght:"300px" ,position:"absolute",left:"40px",bottom:"5px"}
+const button={margin:"0px 10px",padding:'12px 45px'}
 const HeaderThree = () => {
     const [user ,setuser] = useState({value:null})
    const [menuOpen, setMenuOpen] = useState(false)
@@ -105,15 +105,12 @@ const HeaderThree = () => {
                         </div>
                      </div>
                      <div className="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
-                        <div className="header__right d-flex justify-content-end align-items-center">
+                        <div className="header__right d-flex justify-content-center align-items-center">
                            <div className="main-menu main-menu-3 d-none d-xl-block">
                               <nav id="mobile-menu">
                                  <ul>
-                                    <li className="">
-                                       <Link href="/"><a>Home</a></Link>
-                                      
-                                    </li>
-                                    <li className="has-dropdown">
+                                    
+                                       <li className="has-dropdown">
                                        <Link href="/course-grid"><a>Courses</a></Link>
                                        <ul className="submenu">
                                           <li><Link href="/course-grid"><a>Courses</a></Link></li>
@@ -163,7 +160,7 @@ const HeaderThree = () => {
                            </div>
                          
                          { !user.value && <div className="header__btn  d-none d-sm-block">
-                         <Link href="/sign-up"><a className="btn btn-outline-primary btn-lg" style={button}>Sign-up</a></Link>
+                         <Link href="/sign-up"><a className="btn btn-primary btn-lg" style={button}>Register</a></Link>
                            </div>
                          }
 

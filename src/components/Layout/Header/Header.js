@@ -6,8 +6,9 @@ import BurgerMenus from './BurgerMenus';
 import ShopingCart from './ShopingCart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const image={width:"80px",hieght:"300px"}
-const button={margin:"0px 10px"}
+const image={width:"80px",hieght:"300px" ,position:"absolute",left:"40px",bottom:"5px"}
+
+const button={margin:"0px 10px",padding:'12px 45px'}
 const Header = () => {
 
    const [menuOpen, setMenuOpen] = useState(false)
@@ -85,7 +86,7 @@ if(token){
                                           <span>Category</span>
                                        </a>
                                        </Link>
-                                       <ul className="cat-submenu">
+                                       <ul className="cat-submenu " >
                                           <li><Link href="/course-grid"><a>English Learning</a></Link></li>
                                           <li><Link href="/course-grid"><a>Web Development</a></Link></li>
                                           <li><Link href="/course-grid"><a>Logo Design</a></Link></li>
@@ -99,14 +100,11 @@ if(token){
                         </div>
                      </div>
                      <div className="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
-                        <div className="header__right d-flex justify-content-end align-items-center">
+                        <div className="header__right d-flex justify-content-center align-items-center">
                            <div className="main-menu d-none d-xl-block">
                               <nav id="mobile-menu">
                                  <ul>
-                                    <li className="">
-                                       <Link href="/"><a>Home</a></Link>
-                                     
-                                    </li>
+                                   
                                     <li className="has-dropdown">
                                        <Link href="/course-grid"><a>Courses</a></Link>
                                        <ul className="submenu">
@@ -157,7 +155,7 @@ if(token){
                            </div>
                          {!user.value ?
                           <div className="header__btn  d-none d-sm-block">
-                          <Link href="/sign-in"><a className="btn btn-outline-primary btn-lg" style={button}>Sign-in</a></Link>
+                          <Link href="/sign-in"><a className="btn btn-primary btn-lg" style={button}>Register</a></Link>
                            </div>
                             :
                            <div className="header__btn  d-none d-sm-block">
